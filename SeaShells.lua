@@ -4,6 +4,7 @@
 -- are automatically saved until you close the browser window.
 -- This is a seashell matching, sorting, collecting game
 
+-- Hide phone status bar so the game is full screen
 display.setStatusBar(display.HiddenStatusBar)
 
 math.randomseed(os.time())
@@ -11,17 +12,20 @@ math.randomseed(os.time())
 -------------------------------------------------
 -- SETTINGS
 -------------------------------------------------
-
+- responsive design
 local screenW = display.contentWidth
 local screenH = display.contentHeight
 
+- size, column, row
 local cardSize = 60
 local columns = 4
 local rows = 2
 
-local topOffset = 120
+-position
+local topOffset = 160
 local spacing = 20
 
+- tracking in-game
 local flippedCards = {}
 local matchedPairs = 0
 local totalPairs = 4

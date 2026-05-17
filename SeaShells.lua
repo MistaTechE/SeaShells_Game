@@ -46,7 +46,7 @@ sky:setFillColor(0.6, 0.85, 1)
 
 local sand = display.newRect(
     screenW * 0.5,
-    screenH - 70,
+    screenH * 0.82,
     screenW,
     140
 )
@@ -79,7 +79,7 @@ levelText:setFillColor(0.1, 0.2, 0.4)
 local rewardText = display.newText({
     text = "",
     x = screenW * 0.5,
-    y = screenH - 155,
+    y = screenH * 0.68,
     font = native.systemFontBold,
     fontSize = 20
 })
